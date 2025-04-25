@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дякуємо за замовлення | Nouvel Amour Flowers</title>
+  <style>
+    html, body {
+      background-color: #000;
+      background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+      z-index: -1;
+    }
+    .bg-video {
+      position: fixed;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat fixed;
+      z-index: -2;
+      opacity: 0.9;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+      animation: fadeIn 1.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    img.logo {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      max-width: 90vw;
+    }
+    .qr {
+      margin: 1rem 0;
+    }
+    .qr img {
+      width: 130px;
+      height: 130px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 0.3rem;
+      transition: background 0.3s ease;
+      font-size: 1rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      backdrop-filter: blur(5px);
+    }
+    a.button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      p { font-size: 0.95rem; }
+      .buttons a.button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-video"></div>
+  <div class="content">
+    <img class="logo" src="Nouvel_logotype_cur_ (1).png" alt="Nouvel Amour logo">
+    <h1>Дякуємо за ваше замовлення!</h1>
+    <p>Ваш букет уже прямує до вас від "Nouvel Amour Flowers" — з любов’ю та турботою.</p>
+    <p>Зробіть фото свого букету, відмітьте <strong>@nouvel.amour.kyiv</strong> в Instagram і отримайте <strong>приємний бонус</strong> у наступному замовленні!</p>
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/TqRGdF6eoH7Ycko7A" alt="Google Maps QR">
+      <p><a href="https://maps.app.goo.gl/TqRGdF6eoH7Ycko7A" target="_blank">Оцініть нас на Google Maps</a></p>
+    </div>
+    <div class="buttons">
+      <a class="button" href="https://nouvelamour-aroma.com.ua">На сайт</a>
+      <a class="button" href="https://l.instagram.com/?u=https%3A%2F%2Ft.me%2F%2BFwdyGbBq7oZhMjUy&e=AT2MuoO2XQD3bfdIQ3NiWqalpN0ErXEfJhgiCFiV8X-CEjaheF_QRWjJKPEk2mO36H8loIyOmjlQMzy5KCKGNihOkA-xokts" target="_blank">Телеграм</a>
+      <a class="button" href="https://www.instagram.com/nouvel.amour.kyiv/#" target="_blank">Інстаграм</a>
+    </div>
+  </div>
+
+  <!-- Instagram Embed -->
+  <iframe src="https://www.instagram.com/nouvel.amour.kyiv/embed" width="320" height="480" frameborder="0" scrolling="no" allowtransparency="true" style="margin-top: 2rem; border-radius: 12px;"></iframe>
+</body>
+</html>
